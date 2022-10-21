@@ -1,0 +1,118 @@
+.center{
+    text-align: center;
+}
+.pagination{
+   display:inline-block;
+   
+}
+.pagination a{
+    text-decoration: rgb(86, 3, 154);
+    padding: 16px;
+   color:rgb(15, 15, 167);
+    float:left;
+   margin: 0.9em;
+}
+.pagination a:active{
+   background-color: rgb(15, 77, 128);
+}
+.text{
+    font-size: 19px;
+    font-weight: medium;
+    color: rgb(186, 74, 5);
+    padding: 5.5px;
+    
+}
+.reference{
+    font-size: 18px;
+    font-weight: 105;
+}
+.reference:hover{
+    text-decoration: underline;
+    color: rgb(4, 126, 51);
+    cursor: pointer;
+}
+.thumbnail{
+    width: 40px;
+    margin-top: 5px;
+    white-space: nowrap;
+} 
+.thumbnail-1{
+    width: 50px;
+    margin-top: 6px;
+    white-space: nowrap;
+}
+.info{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    vertical-align: top;
+    position: relative;
+}
+.join{
+    background-color: white;
+    color:rgb(6,95,212);
+    border-style:solid;
+    padding:9px 16px;
+    border-radius: 2.5px;
+    margin-left: 8.5px;
+    cursor: pointer;
+    border-width: 1px;
+    border-color: rgb(6,95,212);
+    transition-duration: 0.15s, 0.15s; 
+   }
+  .join:hover{
+    background-color: rgba(13,138,221,0.651);
+    color:white;
+    border-width: 2.5px;
+    border-color: rgb(37, 244, 244);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0,0.5);
+  }
+  .join:active{
+    opacity:0.5;
+  }
+  .tweet{
+    margin-left:8.5px;
+    background-color: rgb(29,155,240);
+    padding:9px 16px;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size:15px;
+    border-radius: 50px;
+    border:none;
+    transition-duration: 0.15s;
+    transition-property: ease;
+    
+  }
+  .tweet:hover{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0,0.15);
+    border-style:groove;
+    border-color: aquamarine;
+  }
+  .tweet:active{
+    opacity:0.5;
+  }   
+  .description{
+    column-count: 2;
+    column-gap: 35px;
+    column-rule-style: ridge;
+    column-rule-width: 5px;
+    column-rule-color: rgb(234, 37, 63);
+    color: rgb(90, 11, 164);
+    padding-bottom: 12px;
+    padding-top: 3px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.list-text{
+    font-size: 16px;
+}
+.subtext{
+    font-size: 20px;
+    color: rgb(121, 4, 4);
+    text-align: center;
+    text-decoration: underline;
+    padding: 5.5px;
+}

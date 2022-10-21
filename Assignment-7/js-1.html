@@ -1,0 +1,124 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>BIODATA</title>
+        
+    </head> 
+<body align="center"bgcolor="antiquewhite">   
+    <h1 id="title" style="color:aquamarine;padding:5px;">Bio Data Form</h1>
+<div id="form">
+  <p id="description" style="font-size: 15px;padding: 4px;color:blue;">
+     Details Of Students
+  </p>
+  <form id="survey"  action="">
+    <div class="Tab">
+      <div class="labels">
+        <label id="name-id" for="name">Name: </label>
+      </div>
+        <input  type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required onkeyup="onkeyupfunct()"style="width:170px;padding:3px;"/>  
+    </div>
+    <div class="Tab">
+      <div class="labels">
+        <label id="email-id" for="email">Email: </label>
+      </div>
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email"style="width:180px;padding:3px"/>
+    </div>
+    <div class="Tab">
+      <div class="labels">
+        <label id="number-label" for="age">Age: </label>
+      </div>
+      <div class="Tab">
+        <input type="number" name="age" id="age" min="1" max="100" class="input-field" placeholder="Age" required style="width:50px;padding:3px;"/>
+      </div>
+    </div>
+    
+    <div class="Tab">
+      <div class="labels">
+        <label id="dob-label" for="dob">D.O.B: </label>
+      </div>
+        <input type="date" name="dob" id="iddob" class="input-field" required style="width: 120px;padding:3px;">
+    </div>
+    
+    <div class="Tab">
+      <div class="labels">
+        <label for="department">Department: </label>
+      </div>
+        <select id="dropdown" name="department" class="dropdown" style="width: 125px;padding: 2px;">
+        <option enabled value>Select an option</option>
+        <option value="IT">IT</option>
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="MECH">MECH</option>
+        <option value="CIVIL">CIVIL</option>
+        <option value="EEE">EEE</option>
+        <option value="Other">Other</option>
+        </select>
+    </div>
+    
+    <div class="Tab">
+      <div class="labels">
+        <label for="gender"id="genDER">Gender: </label>
+      </div>
+      <div class="Tab">
+        <select id="gen" name="Gender" class="dropdown" style="width:130px;padding:2px">
+          <option enabled value>Select an option</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Others">Others</option>
+          </select>
+      </div>
+    </div>
+    <div class="Tab">
+      <div class="labels">
+        <label for="address">Address: </label>
+      </div>
+      <div class="Tab">
+        <textarea id="para" class="input-field" style="height:50px;resize:vertical;border: 2px solid rebeccapurple;border-radius: 5px;" name="address" placeholder="Enter your address here..."></textarea>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="pincode">Pincode: </label>
+      </div>
+      <div class="rightTab">
+       <input type="number" name="pincode" id="pin" class="input-field" style="height:20px;resize:vertical;border: 2px solid rebeccapurple;border-radius: 5px;"placeholder=" - - - - - -"></div>
+    </div>
+    <button id="submit"onclick="funct()"style="padding: 5px;color:cornflowerblue;background-color:salmon;border:2px solid rgb(255,185,195);border-radius:5px;margin-right:18px;margin-top:6px">Submit</button>
+    <button id="reset" onclick="reset()"style="padding: 5px;color:cornflowerblue;background-color:salmon;border:2px solid rgb(255,185,195);border-radius:5px;">Reset</button>
+  </form>
+</div>
+<p id="res"></p>
+<script>
+  let btnsum= document.querySelector('#submit');
+ let btnres= document.querySelector('#reset');
+let nameIn = document.getElementById("name");
+let emailIn = document.getElementById("email");
+let ageIn = document.getElementById("age");
+let dateIn= document.getElementById("iddob");
+let  depIn= document.getElementById("dropdown");
+let genIn = document.getElementById("gen");
+let paraIn = document.getElementById("para");
+let pinIn = document.getElementById("pin");
+    function funct(){
+      alert("SUBMIT SUCCESSFULLY");
+       document.write("NAME: "+nameIn.value +"<br/>"+
+       "EMAIL-ID: "+emailIn.value +"<br/>"+
+       "Age: "+ ageIn.value+"<br/>"+
+       "Date of Birth: "+ iddob.value+"<br/>"+
+       "Department: "+ depIn.value+"<br/>"+
+       "Gender: "+ genIn.value  + "<br/>"+
+       "Address: "+ paraIn.value + "<br/>"+
+       "Pincode: "+pinIn.value + "<br/>" );
+        }  
+    function reset(){
+        alert("RESET SUCCESSFULLY!!");
+    }
+    function onkeyupfunct(){
+     var h= document.getElementById("name");
+     h.value=h.value.toUpperCase();
+      }
+    
+</script>
+    </body>
+</html>

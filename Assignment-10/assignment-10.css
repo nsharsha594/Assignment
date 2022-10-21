@@ -1,0 +1,78 @@
+body{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head{
+    color:blueviolet;
+    font-size: 45px;
+    font-weight: bold;
+}
+.entxt{
+    color:aqua;
+    font-weight: 550;
+}
+.input{
+    padding: 5px;
+    border: 2px solid crimson;
+    border-radius: 5px;
+}
+.input::placeholder{
+    padding: 5px;
+    color: navy;
+    font-size: 12px;
+}
+#vit button{
+    padding: 5px;
+    justify-content: center;
+    color:blueviolet;
+    border:2px solid rgb(15, 185, 220);
+    border-radius: 5px;
+}
+.fact,
+.natural,
+.prime,
+.fib,
+.p1,.p2{
+    color:slateblue;
+    font-size: 15px;
+    cursor: pointer;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    float: left;
+    overflow: auto;
+    width: 400px;
+    border: 2px solid rgb(152, 152, 217);
+    background-color: seashell;
+}
+@media (max-width:420px) {
+   .container{
+    width:50%;
+    padding-top: 10px;
+   }
+    
+}
+@media (max-width:420px) {
+    .container{
+     width:45%;
+     padding-top: 10px;
+    }
+     
+ }
+ @media (min-width:421px) and (max-width:759px){
+    .container{
+     width:55%;
+     padding-top: 10px;
+    }
+     
+ }
+ @media (max-width:990px) {
+    .container{
+     width:60%;
+     padding-top: 10px;
+    }
+}
+     
